@@ -5,14 +5,15 @@
  */
 
 #include "pico/stdlib.h"
+#include <stdio.h>
 
 #define POWER_STATUS_LED 18
 #define CLEAN_TANK_LED 17
 #define DIRTY_TANK_LED 20
 #define ERROR_LED 19
-#define ULTRASONIC_TRIG 28
+#define ULTRASONIC_TRIG 6
 
-#define ULTRASONIC_ECHO 27
+#define ULTRASONIC_ECHO 1
 #define POWER_STATUS_INPUT 14
 #define CLEAN_TANK_INPUT 12
 #define ERROR_INPUT 10
@@ -36,35 +37,44 @@
 
 void send_trigger_pulse() {
     gpio_put(ULTRASONIC_TRIG, ON);
-    sleep_us(10);
+    sleep_ms(60);
     gpio_put(ULTRASONIC_TRIG, OFF);
 }
 
 double get_distance_cm() {
-    // Send trigger
     send_trigger_pulse();
 
-    // Echo start
-    while (gpio_get(ULTRASONIC_ECHO) == 0);
+    absolute_time_t timeout = make_timeout_time_ms(200);
 
-    absolute_time_t start_time = get_absolute_time(); // Pico sdk function
+    // Wait for echo to go HIGH
+    while (gpio_get(ULTRASONIC_ECHO) == 0) {
+        if (absolute_time_diff_us(get_absolute_time(), timeout) <= 0) {
+            printf("Echo start timeout\n");
+            return 100;
+        }
+    }
+    absolute_time_t start_time = get_absolute_time();
 
-    // Wait for echo end
-    while (gpio_get(ULTRASONIC_ECHO) == 1);
-
+    timeout = make_timeout_time_ms(200);
+    // Wait for echo to go LOW
+    while (gpio_get(ULTRASONIC_ECHO) == 1) {
+        if (absolute_time_diff_us(get_absolute_time(), timeout) <= 0) {
+            printf("Echo end timeout\n");
+            return 100;
+        }
+    }
     absolute_time_t end_time = get_absolute_time();
 
-    // Calculate time difference in microseconds
     int64_t time_diff_us = absolute_time_diff_us(start_time, end_time);
-
-    // Speed of sound is ~343 m/s, or 0.0343 cm/us
-    // Distance = (time * speed of sound) / 2 (round trip)
     float distance_cm = (time_diff_us * 0.0343f) / 2.0f;
 
+    printf("distance: %.2f cm\n", distance_cm);
     return distance_cm;
 }
 
+
 int main() {
+    stdio_init_all();
     gpio_init_mask(LED_MASK);
     gpio_set_dir_out_masked(LED_MASK); // Initialize output signals (LEDs)
     gpio_init_mask(INPUT_MASK); // Initialize input signals
@@ -99,13 +109,14 @@ int main() {
         PREVIOUS_BUTTON_SIGNAL = CURRENT_BUTTON_SIGNAL;
 
         while (PROGRAM_STATE == ON) {
+            printf("working");
             // Dirty tank I/O using ultrasonic sensor results
             int DIRTY_TANK_STATUS = OFF;
-            // if (get_distance_cm() < 50) DIRTY_TANK_STATUS = ON;
+            if (get_distance_cm() < 10) DIRTY_TANK_STATUS = ON;
 
             // Other I/O
             gpio_put(CLEAN_TANK_LED, gpio_get(CLEAN_TANK_INPUT));
-            gpio_put(DIRTY_TANK_LED, gpio_get(DIRTY_TANK_INPUT));
+            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_STATUS);
             gpio_put(ERROR_LED, gpio_get(ERROR_INPUT));
             gpio_set_mask(RELAY_MASK);
 
@@ -117,6 +128,7 @@ int main() {
             }
 
             PREVIOUS_BUTTON_SIGNAL = CURRENT_BUTTON_SIGNAL;
+            sleep_ms(100);
         }
     }
 }
