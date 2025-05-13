@@ -6,6 +6,8 @@
 
 #include "pico/stdlib.h"
 #include <stdio.h>
+#include "FreeRTOS.h"
+#include "task.h"
 
 #define POWER_STATUS_LED 18
 #define CLEAN_TANK_LED 17
@@ -35,9 +37,13 @@
 #define ON 1
 #define OFF 0
 
+int PROGRAM_STATE = OFF;
+int ERROR_FLAG = OFF;
+int CLEANING_SETTING = 1; // Low = 0, Med = 1, High = 2
+
 void send_trigger_pulse() {
     gpio_put(ULTRASONIC_TRIG, ON);
-    sleep_ms(60);
+    vTaskDelay(60 / portTICK_PERIOD_MS);
     gpio_put(ULTRASONIC_TRIG, OFF);
 }
 
@@ -50,7 +56,7 @@ double get_distance_cm() {
     while (gpio_get(ULTRASONIC_ECHO) == 0) {
         if (absolute_time_diff_us(get_absolute_time(), timeout) <= 0) {
             printf("Echo start timeout\n");
-            return 100;
+            return -1.0;
         }
     }
     absolute_time_t start_time = get_absolute_time();
@@ -60,7 +66,7 @@ double get_distance_cm() {
     while (gpio_get(ULTRASONIC_ECHO) == 1) {
         if (absolute_time_diff_us(get_absolute_time(), timeout) <= 0) {
             printf("Echo end timeout\n");
-            return 100;
+            return -1.0;
         }
     }
     absolute_time_t end_time = get_absolute_time();
@@ -72,6 +78,84 @@ double get_distance_cm() {
     return distance_cm;
 }
 
+/* FreeRTOS Tasks*/
+void PowerTask(void* param) {
+    while (1) {
+        gpio_put(POWER_STATUS_LED, PROGRAM_STATE);
+        if (gpio_get(POWER_STATUS_INPUT) == 1) PROGRAM_STATE = !PROGRAM_STATE;
+        vTaskDelay(5);
+    }
+}
+
+void DirtyTankTask(void* param) {
+    while (1) {
+        if (PROGRAM_STATE == ON) {
+            int DIRTY_TANK_STATUS = OFF;
+            if (get_distance_cm >= 0 && get_distance_cm() < 10) DIRTY_TANK_STATUS = ON;
+            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_STATUS);
+            vTaskDelay(100 / portTICK_PERIOD_MS);
+        }
+    }
+}
+
+void CleanTankTask(void* param) {
+    while (1) {
+        if (PROGRAM_STATE == ON) {
+            gpio_put(CLEAN_TANK_LED, gpio_get(CLEAN_TANK_INPUT));
+        }
+        vTaskDelay(10);
+    }
+}
+
+void ErrorTask(void* param) {
+    while (1) {
+        int ERROR_STATUS = gpio_get(ERROR_INPUT);
+        gpio_put(ERROR_LED, gpio_get(ERROR_INPUT));
+        if (ERROR_STATUS == ON) {
+            ERROR_FLAG = ON;
+        }
+        vTaskDelay(5);
+    }
+}
+
+void CleaningSettingTask(void* param) {
+    while (1) {
+        if (PROGRAM_STATE == ON && gpio_get(CLEANING_SETTING_INPUT) == 1) {
+            CLEANING_SETTING++;
+            if (CLEANING_SETTING > 3) CLEANING_SETTING = 1;
+            printf("Cleaning Setting: %d\n", CLEANING_SETTING);
+            vTaskDelay(100 / portTICK_PERIOD_MS); // to deal with debounce
+        }
+        vTaskDelay(5);
+    }
+}
+
+void CleanTask(void* param) {
+    while (1) {
+        if (PROGRAM_STATE == ON && gpio_get(START_INPUT) == 1) {
+            printf("Starting cleaning...\n");
+
+            gpio_put(RELAY_1_INPUT, ON);
+            vTaskDelay(5000 * CLEANING_SETTING);
+            gpio_put(RELAY_1_INPUT, OFF);
+
+            gpio_put(RELAY_2_INPUT, ON);
+            vTaskDelay(5000 * CLEANING_SETTING);
+            gpio_put(RELAY_2_INPUT, OFF);
+
+            gpio_put(RELAY_3_INPUT, ON);
+            vTaskDelay(5000 * CLEANING_SETTING);
+            gpio_put(RELAY_3_INPUT, OFF);
+
+            gpio_put(RELAY_4_INPUT, ON);
+            vTaskDelay(5000 * CLEANING_SETTING);
+            gpio_put(RELAY_4_INPUT, OFF);
+
+            printf("Done cleaning!\n");
+        }
+        vTaskDelay(10); 
+    }
+}
 
 int main() {
     stdio_init_all();
@@ -92,43 +176,68 @@ int main() {
     gpio_init(ULTRASONIC_ECHO);
     gpio_set_dir(ULTRASONIC_ECHO, GPIO_IN);
 
-    int CLEANING_SETTING = 0; // Low = 0, Med = 1, High = 2
+    TaskHandle_t powTask = NULL;
+    TaskHandle_t dTankTask = NULL;
+    TaskHandle_t cTankTask = NULL;
+    TaskHandle_t errTask = NULL;
+    TaskHandle_t settingTask = NULL;
+    TaskHandle_t cleanTask = NULL;
 
-    int PROGRAM_STATE = OFF;
-    int PREVIOUS_BUTTON_SIGNAL = OFF;
+    uint32_t status = xTaskCreate(
+        PowerTask,
+        "Manage program state",
+        1024,
+        NULL,
+        4,
+        &powTask);
 
-    while (true) {
-        int CURRENT_BUTTON_SIGNAL = gpio_get(POWER_STATUS_INPUT);
+    status = xTaskCreate(
+        DirtyTankTask,
+        "Manage dirty tank sensor and indicator",
+        1024,
+        NULL,
+        1,
+        &dTankTask        
+    );
 
-        // Toggle program's state when power button goes from LOW to HIGH
-        if (CURRENT_BUTTON_SIGNAL == ON && PREVIOUS_BUTTON_SIGNAL == OFF) { 
-            PROGRAM_STATE = !PROGRAM_STATE;
-            gpio_put(POWER_STATUS_LED, PROGRAM_STATE);
-        }
+    status = xTaskCreate(
+        CleanTankTask,
+        "Manage clean tank sensor and indicator",
+        1024,
+        NULL,
+        1,
+        &cTankTask        
+    );
 
-        PREVIOUS_BUTTON_SIGNAL = CURRENT_BUTTON_SIGNAL;
+    status = xTaskCreate(
+        ErrorTask,
+        "Manage erroring",
+        1024,
+        NULL,
+        3,
+        &errTask        
+    );
 
-        while (PROGRAM_STATE == ON) {
-            printf("working");
-            // Dirty tank I/O using ultrasonic sensor results
-            int DIRTY_TANK_STATUS = OFF;
-            if (get_distance_cm() < 10) DIRTY_TANK_STATUS = ON;
+    status = xTaskCreate(
+        CleaningSettingTask,
+        "Manage user input for cleaning setting",
+        1024,
+        NULL,
+        2,
+        &settingTask
+    );
 
-            // Other I/O
-            gpio_put(CLEAN_TANK_LED, gpio_get(CLEAN_TANK_INPUT));
-            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_STATUS);
-            gpio_put(ERROR_LED, gpio_get(ERROR_INPUT));
-            gpio_set_mask(RELAY_MASK);
+    status = xTaskCreate(
+        CleanTask,
+        "Manage the cleaning operation",
+        1024,
+        NULL,
+        4,
+        &cleanTask
+    );
 
-            // Check for another LOW to HIGH transition to turn off PROGRAM_STATE
-            CURRENT_BUTTON_SIGNAL = gpio_get(POWER_STATUS_INPUT);
-            if (CURRENT_BUTTON_SIGNAL == ON && PREVIOUS_BUTTON_SIGNAL == OFF) {
-                PROGRAM_STATE = OFF;
-                gpio_put_masked(LED_MASK, OFF);
-            }
+    vTaskStartScheduler();
 
-            PREVIOUS_BUTTON_SIGNAL = CURRENT_BUTTON_SIGNAL;
-            sleep_ms(100);
-        }
+    while (1) { // Should never reach this 
     }
 }

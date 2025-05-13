@@ -72,4 +72,13 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: \
  c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\_pthreadtypes.h \
  c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\sched.h \
  c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\machine\types.h \
- c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\stdio.h
+ c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\stdio.h \
+ C:\VSARM\FreeRTOS-Kernel\include/FreeRTOS.h \
+ C:\VSARM\FreeRTOS-Kernel\include/projdefs.h \
+ C:\VSARM\FreeRTOS-Kernel\include/portable.h \
+ C:\VSARM\FreeRTOS-Kernel\include/deprecated_definitions.h \
+ C:\VSARM\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\include/portmacro.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
+ C:\VSARM\FreeRTOS-Kernel\include/mpu_wrappers.h \
+ C:\VSARM\FreeRTOS-Kernel\include/task.h \
+ C:\VSARM\FreeRTOS-Kernel\include/list.h

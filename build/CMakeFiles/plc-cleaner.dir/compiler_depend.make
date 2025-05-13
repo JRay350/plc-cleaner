@@ -3754,7 +3754,16 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: C:/development/plc-cleaner/src/main.c
   C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_pthreadtypes.h \
   C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/sched.h \
   C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/types.h \
-  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/stdio.h
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/stdio.h \
+  C:/VSARM/FreeRTOS-Kernel/include/FreeRTOS.h \
+  C:/VSARM/FreeRTOS-Kernel/include/projdefs.h \
+  C:/VSARM/FreeRTOS-Kernel/include/portable.h \
+  C:/VSARM/FreeRTOS-Kernel/include/deprecated_definitions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/portmacro.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/VSARM/FreeRTOS-Kernel/include/mpu_wrappers.h \
+  C:/VSARM/FreeRTOS-Kernel/include/task.h \
+  C:/VSARM/FreeRTOS-Kernel/include/list.h
 
 
 C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c:
