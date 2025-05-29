@@ -54,6 +54,9 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\include/hardware/i2c.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/i2c.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/i2c.h \
  c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\stdio.h \
  c:\vsarm\armcc\112202~1.02\lib\gcc\arm-none-eabi\11.2.1\include\stdarg.h \
  c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\reent.h \
@@ -81,4 +84,26 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\include/hardware/sync.h \
  C:\VSARM\FreeRTOS-Kernel\include/mpu_wrappers.h \
  C:\VSARM\FreeRTOS-Kernel\include/task.h \
- C:\VSARM\FreeRTOS-Kernel\include/list.h
+ C:\VSARM\FreeRTOS-Kernel\include/list.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/defs.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/structure.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_binary_info\include/pico/binary_info/code.h \
+ C:\development\plc-cleaner\extern\onewire_library/ow_rom.h \
+ C:\development\plc-cleaner\extern\onewire_library/ds18b20.h \
+ C:\development\plc-cleaner/extern/onewire_library/onewire_library.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\include/hardware/pio.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/pio.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/pio.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\include/hardware/pio_instructions.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_clocks\include/hardware/clocks.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/clocks.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/clocks.h \
+ C:\development\plc-cleaner\build\extern\onewire_library/onewire_library.pio.h \
+ C:\development\plc-cleaner/extern/hx711-pico-c/include/common.h \
+ C:\development\plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/mutex.h \
+ C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\include/pico/lock_core.h \
+ C:\development\plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h \
+ c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\strings.h \
+ c:\vsarm\armcc\112202~1.02\arm-none-eabi\include\sys\_locale.h

@@ -23,9 +23,16 @@ target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 # FreeRTOS-Kernel-Heap1 thru FreeRTOS-Kernel_Heap4
 # or
 # FreeRTOS-Kernel-Static
+
+add_subdirectory(extern/hx711-pico-c)
+add_subdirectory(extern/onewire_library)
 target_link_libraries(${PROJECT_NAME}
   pico_stdlib
+  hardware_i2c
   FreeRTOS-Kernel-Heap4
+  hardware_pio
+  hx711-pico-c
+  onewire_library
 )
 
 pico_enable_stdio_uart(${PROJECT_NAME} 0)

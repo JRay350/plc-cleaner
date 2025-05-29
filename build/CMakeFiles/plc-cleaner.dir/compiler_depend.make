@@ -2104,6 +2104,66 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_cl
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h
 
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdarg.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/reent.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/lock.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/endian.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_endian.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/select.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_sigset.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_timeval.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/timespec.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_timespec.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_pthreadtypes.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/sched.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/stdio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
+
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/include/hardware/exception.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -2230,6 +2290,56 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gp
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
 
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h
+
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -2276,6 +2386,58 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_ir
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
@@ -3681,6 +3843,336 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h
 
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/common.c \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/common.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/strings.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_locale.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_reader.pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi_awaiter.pio.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi_reader.pio.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/util.h
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711.c \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/util.h
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711_multi.c \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/math.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/reent.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/lock.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/strings.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_locale.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/util.h
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/util.c \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/util.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h
+
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj: C:/development/plc-cleaner/extern/onewire_library/onewire_library.c \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdbool.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/assert.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_ansi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/newlib.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/_newlib_version.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/config.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/ieeefp.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/features.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_default_types.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_intsup.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_stdint.h \
+  C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/freertos_sdk_config.h \
+  C:/development/plc-cleaner/FreeRTOSConfig.h \
+  C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/include/rp2040_config.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/cdefs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/development/plc-cleaner/extern/onewire_library/onewire_library.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  extern/onewire_library/onewire_library.pio.h
+
 CMakeFiles/plc-cleaner.dir/src/main.c.obj: C:/development/plc-cleaner/src/main.c \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -3736,6 +4228,9 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: C:/development/plc-cleaner/src/main.c
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
   C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/stdio.h \
   C:/VSARM/armcc/11.2\ 2022.02/lib/gcc/arm-none-eabi/11.2.1/include/stdarg.h \
   C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/reent.h \
@@ -3763,8 +4258,32 @@ CMakeFiles/plc-cleaner.dir/src/main.c.obj: C:/development/plc-cleaner/src/main.c
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
   C:/VSARM/FreeRTOS-Kernel/include/mpu_wrappers.h \
   C:/VSARM/FreeRTOS-Kernel/include/task.h \
-  C:/VSARM/FreeRTOS-Kernel/include/list.h
+  C:/VSARM/FreeRTOS-Kernel/include/list.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+  C:/development/plc-cleaner/extern/onewire_library/ow_rom.h \
+  C:/development/plc-cleaner/extern/onewire_library/ds18b20.h \
+  C:/development/plc-cleaner/extern/onewire_library/onewire_library.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  extern/onewire_library/onewire_library.pio.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/common.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/strings.h \
+  C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_locale.h
 
+
+C:/development/plc-cleaner/extern/onewire_library/onewire_library.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c:
 
@@ -3880,6 +4399,8 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_a
 
 C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h:
 
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
+
 C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:
@@ -3916,6 +4437,8 @@ C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/c++/11.2.1/cstdlib:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h:
 
+C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi_awaiter.pio.h:
+
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
 
 C:/VSARM/FreeRTOS-Kernel/include/list.h:
@@ -3951,6 +4474,8 @@ C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/string.h:
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h:
 
 C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h:
 
@@ -3991,6 +4516,8 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus
 C:/VSARM/FreeRTOS-Kernel/queue.c:
 
 C:/VSARM/FreeRTOS-Kernel/include/queue.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711.c:
 
 C:/VSARM/FreeRTOS-Kernel/include/stream_buffer.h:
 
@@ -4040,9 +4567,13 @@ C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/_timespec.h:
 
 C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/endian.h:
 
+C:/development/plc-cleaner/extern/onewire_library/ow_rom.h:
+
 C:/VSARM/sdk/pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h:
 
 C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/_endian.h:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h:
 
 C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/select.h:
 
@@ -4070,6 +4601,8 @@ C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/osal/osal_pico.h:
 
 C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h:
 
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h:
+
 C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/ssi.h:
@@ -4085,6 +4618,8 @@ C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
 C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
 C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c:
 
@@ -4184,6 +4719,14 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_b
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h:
 
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
+
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c:
@@ -4196,7 +4739,17 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c:
 
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
+
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
+
+C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c:
 
@@ -4217,8 +4770,6 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h:
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h:
-
-C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
@@ -4249,6 +4800,8 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c:
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c:
 
 C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/sys/time.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_reader.pio.h:
 
 C:/VSARM/armcc/11.2\ 2022.02/arm-none-eabi/include/machine/time.h:
 
@@ -4286,4 +4839,26 @@ C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c:
 
+C:/development/plc-cleaner/extern/hx711-pico-c/src/common.c:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/common.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/hx711_multi_reader.pio.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/include/util.h:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711_multi.c:
+
+C:/development/plc-cleaner/extern/hx711-pico-c/src/util.c:
+
+C:/development/plc-cleaner/extern/onewire_library/onewire_library.c:
+
+extern/onewire_library/onewire_library.pio.h:
+
 C:/development/plc-cleaner/src/main.c:
+
+C:/development/plc-cleaner/extern/onewire_library/ds18b20.h:

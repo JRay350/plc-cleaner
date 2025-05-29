@@ -9,7 +9,9 @@
 					"childIndexes" : 
 					[
 						1,
-						81
+						81,
+						82,
+						83
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -20,7 +22,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						4
+						5
 					]
 				},
 				{
@@ -1023,6 +1025,32 @@
 					"parentIndex" : 0,
 					"projectIndex" : 2,
 					"source" : "C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040"
+				},
+				{
+					"build" : "extern/hx711-pico-c",
+					"jsonFile" : "directory-extern.hx711-pico-c-Debug-96503a1a2169dd1cd75d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "extern/hx711-pico-c"
+				},
+				{
+					"build" : "extern/onewire_library",
+					"jsonFile" : "directory-extern.onewire_library-Debug-67c53a87c4934237bd01.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "extern/onewire_library",
+					"targetIndexes" : 
+					[
+						4
+					]
 				}
 			],
 			"name" : "Debug",
@@ -1032,16 +1060,19 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
-						0
+						0,
+						83
 					],
 					"name" : "plc-cleaner",
 					"targetIndexes" : 
 					[
-						4
+						4,
+						5
 					]
 				},
 				{
@@ -1145,6 +1176,14 @@
 					],
 					"name" : "FreeRTOS-Kernel",
 					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						82
+					],
+					"name" : "hx711-pico-c",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -1178,9 +1217,16 @@
 					"projectIndex" : 1
 				},
 				{
+					"directoryIndex" : 83,
+					"id" : "onewire_library_onewire_library_pio_h::@fb1a71e8b45faaaaa09e",
+					"jsonFile" : "target-onewire_library_onewire_library_pio_h-Debug-02501c23b1703bc96427.json",
+					"name" : "onewire_library_onewire_library_pio_h",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "plc-cleaner::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-plc-cleaner-Debug-c9f0b65be48ec6474edb.json",
+					"jsonFile" : "target-plc-cleaner-Debug-7cc7a89d2c0e0596aab3.json",
 					"name" : "plc-cleaner",
 					"projectIndex" : 0
 				}

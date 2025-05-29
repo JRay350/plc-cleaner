@@ -167,3 +167,8 @@ C:/development/plc-cleaner/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 C:/development/plc-cleaner/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 C:/development/plc-cleaner/build/FREERTOS_KERNEL/CMakeFiles/edit_cache.dir
 C:/development/plc-cleaner/build/FREERTOS_KERNEL/CMakeFiles/rebuild_cache.dir
+C:/development/plc-cleaner/build/extern/hx711-pico-c/CMakeFiles/edit_cache.dir
+C:/development/plc-cleaner/build/extern/hx711-pico-c/CMakeFiles/rebuild_cache.dir
+C:/development/plc-cleaner/build/extern/onewire_library/CMakeFiles/onewire_library_onewire_library_pio_h.dir
+C:/development/plc-cleaner/build/extern/onewire_library/CMakeFiles/edit_cache.dir
+C:/development/plc-cleaner/build/extern/onewire_library/CMakeFiles/rebuild_cache.dir

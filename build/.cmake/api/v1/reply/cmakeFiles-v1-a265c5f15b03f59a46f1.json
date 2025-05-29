@@ -634,6 +634,42 @@
 		{
 			"isExternal" : true,
 			"path" : "C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/library.cmake"
+		},
+		{
+			"path" : "extern/hx711-pico-c/CMakeLists.txt"
+		},
+		{
+			"path" : "extern/hx711-pico-c/pico_sdk_import.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/VSARM/sdk/pico/pico-sdk/pico_sdk_init.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/cmake/share/cmake-3.25/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"path" : "extern/onewire_library/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk-tools/pico-sdk-tools-config-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk-tools/pico-sdk-tools-config.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

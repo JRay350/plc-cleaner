@@ -139,6 +139,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
+  "C:/development/plc-cleaner/extern/hx711-pico-c/CMakeLists.txt"
+  "C:/development/plc-cleaner/extern/hx711-pico-c/pico_sdk_import.cmake"
+  "C:/development/plc-cleaner/extern/onewire_library/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -233,6 +236,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/src/rp2040/hardware_structs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "FREERTOS_KERNEL/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "extern/hx711-pico-c/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "extern/onewire_library/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -242,4 +247,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake"
+  "extern/onewire_library/CMakeFiles/onewire_library_onewire_library_pio_h.dir/DependInfo.cmake"
   )

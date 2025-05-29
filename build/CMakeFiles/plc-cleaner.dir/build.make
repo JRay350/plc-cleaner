@@ -1023,10 +1023,24 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c > CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.i
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_i2c\i2c.c.s
+
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: C:/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj -c C:\VSARM\FreeRTOS-Kernel\portable\MemMang\heap_4.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.i: cmake_force
@@ -1040,7 +1054,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.s:
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj: C:/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c.obj -c C:\VSARM\FreeRTOS-Kernel\portable\ThirdParty\GCC\RP2040\port.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.i: cmake_force
@@ -1054,7 +1068,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP20
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj: C:/VSARM/FreeRTOS-Kernel/croutine.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\croutine.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\croutine.c.obj -c C:\VSARM\FreeRTOS-Kernel\croutine.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.i: cmake_force
@@ -1068,7 +1082,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.s: cmake_force
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj: C:/VSARM/FreeRTOS-Kernel/event_groups.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\event_groups.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\event_groups.c.obj -c C:\VSARM\FreeRTOS-Kernel\event_groups.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.i: cmake_force
@@ -1082,7 +1096,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/event_groups.c.s: cmake_forc
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj: C:/VSARM/FreeRTOS-Kernel/list.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\list.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\list.c.obj -c C:\VSARM\FreeRTOS-Kernel\list.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.i: cmake_force
@@ -1096,7 +1110,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/list.c.s: cmake_force
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj: C:/VSARM/FreeRTOS-Kernel/queue.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\queue.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\queue.c.obj -c C:\VSARM\FreeRTOS-Kernel\queue.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.i: cmake_force
@@ -1110,7 +1124,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/queue.c.s: cmake_force
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj: C:/VSARM/FreeRTOS-Kernel/stream_buffer.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\stream_buffer.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\stream_buffer.c.obj -c C:\VSARM\FreeRTOS-Kernel\stream_buffer.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.i: cmake_force
@@ -1124,7 +1138,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/stream_buffer.c.s: cmake_for
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj: C:/VSARM/FreeRTOS-Kernel/tasks.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\tasks.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\tasks.c.obj -c C:\VSARM\FreeRTOS-Kernel\tasks.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.i: cmake_force
@@ -1138,7 +1152,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.s: cmake_force
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj: C:/VSARM/FreeRTOS-Kernel/timers.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\timers.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\FreeRTOS-Kernel\timers.c.obj -c C:\VSARM\FreeRTOS-Kernel\timers.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.i: cmake_force
@@ -1152,7 +1166,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.s: cmake_force
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_exception\exception.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_exception\exception.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i: cmake_force
@@ -1166,7 +1180,7 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_ex
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c
 
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1176,6 +1190,104 @@ CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multic
 CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
 	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_multicore\multicore.c.s
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c > CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.i
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pio\pio.c.s
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711.c
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj -MF CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711.c.obj.d -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711.c.obj -c C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711.c
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711.c > CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711.c.i
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711.c -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711.c.s
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/hx711_multi.c
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj -MF CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711_multi.c.obj.d -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711_multi.c.obj -c C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711_multi.c
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711_multi.c > CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711_multi.c.i
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\development\plc-cleaner\extern\hx711-pico-c\src\hx711_multi.c -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\hx711_multi.c.s
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/common.c
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj -MF CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\common.c.obj.d -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\common.c.obj -c C:\development\plc-cleaner\extern\hx711-pico-c\src\common.c
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\development\plc-cleaner\extern\hx711-pico-c\src\common.c > CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\common.c.i
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\development\plc-cleaner\extern\hx711-pico-c\src\common.c -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\common.c.s
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj: C:/development/plc-cleaner/extern/hx711-pico-c/src/util.c
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj -MF CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\util.c.obj.d -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\util.c.obj -c C:\development\plc-cleaner\extern\hx711-pico-c\src\util.c
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\development\plc-cleaner\extern\hx711-pico-c\src\util.c > CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\util.c.i
+
+CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\development\plc-cleaner\extern\hx711-pico-c\src\util.c -o CMakeFiles\plc-cleaner.dir\extern\hx711-pico-c\src\util.c.s
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj.d -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c > CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.i
+
+CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c -o CMakeFiles\plc-cleaner.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_dma\dma.c.s
+
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj: CMakeFiles/plc-cleaner.dir/flags.make
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj: C:/development/plc-cleaner/extern/onewire_library/onewire_library.c
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj: CMakeFiles/plc-cleaner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj -MF CMakeFiles\plc-cleaner.dir\extern\onewire_library\onewire_library.c.obj.d -o CMakeFiles\plc-cleaner.dir\extern\onewire_library\onewire_library.c.obj -c C:\development\plc-cleaner\extern\onewire_library\onewire_library.c
+
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.i"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\development\plc-cleaner\extern\onewire_library\onewire_library.c > CMakeFiles\plc-cleaner.dir\extern\onewire_library\onewire_library.c.i
+
+CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.s"
+	C:\VSARM\armcc\112202~1.02\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\development\plc-cleaner\extern\onewire_library\onewire_library.c -o CMakeFiles\plc-cleaner.dir\extern\onewire_library\onewire_library.c.s
 
 # Object files for target plc-cleaner
 plc__cleaner_OBJECTS = \
@@ -1248,6 +1360,7 @@ plc__cleaner_OBJECTS = \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj" \
@@ -1258,7 +1371,14 @@ plc__cleaner_OBJECTS = \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj" \
 "CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj" \
-"CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+"CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" \
+"CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" \
+"CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj" \
+"CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj" \
+"CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj" \
+"CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj" \
+"CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj" \
+"CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj"
 
 # External object files for target plc-cleaner
 plc__cleaner_EXTERNAL_OBJECTS =
@@ -1332,6 +1452,7 @@ plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyu
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040/port.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/croutine.c.obj
@@ -1343,11 +1464,18 @@ plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/tasks.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/FreeRTOS-Kernel/timers.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/build.make
 plc-cleaner.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/objects1
 plc-cleaner.elf: CMakeFiles/plc-cleaner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Linking CXX executable plc-cleaner.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\development\plc-cleaner\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking CXX executable plc-cleaner.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\plc-cleaner.dir\link.txt --verbose=$(VERBOSE)
 	"C:\VSARM\armcc\11.2 2022.02\bin\arm-none-eabi-objcopy.exe" -Oihex C:/development/plc-cleaner/build/plc-cleaner.elf plc-cleaner.hex
 	"C:\VSARM\armcc\11.2 2022.02\bin\arm-none-eabi-objcopy.exe" -Obinary C:/development/plc-cleaner/build/plc-cleaner.elf plc-cleaner.bin

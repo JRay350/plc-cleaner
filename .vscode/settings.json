@@ -1,5 +1,9 @@
 {
   "files.associations": {
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "common.h": "c",
+    "onewire_library.h": "c",
+    "ow_rom.h": "c",
+    "ds18b20.h": "c"
   }
 }

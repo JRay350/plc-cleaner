@@ -180,6 +180,19 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\pico_cyw43_driver\CMakeFiles\cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir\build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
+#=============================================================================
+# Target rules for targets named onewire_library_onewire_library_pio_h
+
+# Build rule for target.
+onewire_library_onewire_library_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 onewire_library_onewire_library_pio_h
+.PHONY : onewire_library_onewire_library_pio_h
+
+# fast build rule for target.
+onewire_library_onewire_library_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f extern\onewire_library\CMakeFiles\onewire_library_onewire_library_pio_h.dir\build.make extern/onewire_library/CMakeFiles/onewire_library_onewire_library_pio_h.dir/build
+.PHONY : onewire_library_onewire_library_pio_h/fast
+
 C_/VSARM/FreeRTOS-Kernel/croutine.obj: C_/VSARM/FreeRTOS-Kernel/croutine.c.obj
 .PHONY : C_/VSARM/FreeRTOS-Kernel/croutine.obj
 
@@ -1100,6 +1113,30 @@ C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+
+# target to build an object file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
 C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
 
@@ -1172,6 +1209,30 @@ C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -1203,6 +1264,30 @@ C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: C_
 C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
@@ -1900,6 +1985,126 @@ C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
+extern/hx711-pico-c/src/common.obj: extern/hx711-pico-c/src/common.c.obj
+.PHONY : extern/hx711-pico-c/src/common.obj
+
+# target to build an object file
+extern/hx711-pico-c/src/common.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.obj
+.PHONY : extern/hx711-pico-c/src/common.c.obj
+
+extern/hx711-pico-c/src/common.i: extern/hx711-pico-c/src/common.c.i
+.PHONY : extern/hx711-pico-c/src/common.i
+
+# target to preprocess a source file
+extern/hx711-pico-c/src/common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.i
+.PHONY : extern/hx711-pico-c/src/common.c.i
+
+extern/hx711-pico-c/src/common.s: extern/hx711-pico-c/src/common.c.s
+.PHONY : extern/hx711-pico-c/src/common.s
+
+# target to generate assembly for a file
+extern/hx711-pico-c/src/common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/common.c.s
+.PHONY : extern/hx711-pico-c/src/common.c.s
+
+extern/hx711-pico-c/src/hx711.obj: extern/hx711-pico-c/src/hx711.c.obj
+.PHONY : extern/hx711-pico-c/src/hx711.obj
+
+# target to build an object file
+extern/hx711-pico-c/src/hx711.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.obj
+.PHONY : extern/hx711-pico-c/src/hx711.c.obj
+
+extern/hx711-pico-c/src/hx711.i: extern/hx711-pico-c/src/hx711.c.i
+.PHONY : extern/hx711-pico-c/src/hx711.i
+
+# target to preprocess a source file
+extern/hx711-pico-c/src/hx711.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.i
+.PHONY : extern/hx711-pico-c/src/hx711.c.i
+
+extern/hx711-pico-c/src/hx711.s: extern/hx711-pico-c/src/hx711.c.s
+.PHONY : extern/hx711-pico-c/src/hx711.s
+
+# target to generate assembly for a file
+extern/hx711-pico-c/src/hx711.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711.c.s
+.PHONY : extern/hx711-pico-c/src/hx711.c.s
+
+extern/hx711-pico-c/src/hx711_multi.obj: extern/hx711-pico-c/src/hx711_multi.c.obj
+.PHONY : extern/hx711-pico-c/src/hx711_multi.obj
+
+# target to build an object file
+extern/hx711-pico-c/src/hx711_multi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.obj
+.PHONY : extern/hx711-pico-c/src/hx711_multi.c.obj
+
+extern/hx711-pico-c/src/hx711_multi.i: extern/hx711-pico-c/src/hx711_multi.c.i
+.PHONY : extern/hx711-pico-c/src/hx711_multi.i
+
+# target to preprocess a source file
+extern/hx711-pico-c/src/hx711_multi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.i
+.PHONY : extern/hx711-pico-c/src/hx711_multi.c.i
+
+extern/hx711-pico-c/src/hx711_multi.s: extern/hx711-pico-c/src/hx711_multi.c.s
+.PHONY : extern/hx711-pico-c/src/hx711_multi.s
+
+# target to generate assembly for a file
+extern/hx711-pico-c/src/hx711_multi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/hx711_multi.c.s
+.PHONY : extern/hx711-pico-c/src/hx711_multi.c.s
+
+extern/hx711-pico-c/src/util.obj: extern/hx711-pico-c/src/util.c.obj
+.PHONY : extern/hx711-pico-c/src/util.obj
+
+# target to build an object file
+extern/hx711-pico-c/src/util.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.obj
+.PHONY : extern/hx711-pico-c/src/util.c.obj
+
+extern/hx711-pico-c/src/util.i: extern/hx711-pico-c/src/util.c.i
+.PHONY : extern/hx711-pico-c/src/util.i
+
+# target to preprocess a source file
+extern/hx711-pico-c/src/util.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.i
+.PHONY : extern/hx711-pico-c/src/util.c.i
+
+extern/hx711-pico-c/src/util.s: extern/hx711-pico-c/src/util.c.s
+.PHONY : extern/hx711-pico-c/src/util.s
+
+# target to generate assembly for a file
+extern/hx711-pico-c/src/util.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/hx711-pico-c/src/util.c.s
+.PHONY : extern/hx711-pico-c/src/util.c.s
+
+extern/onewire_library/onewire_library.obj: extern/onewire_library/onewire_library.c.obj
+.PHONY : extern/onewire_library/onewire_library.obj
+
+# target to build an object file
+extern/onewire_library/onewire_library.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.obj
+.PHONY : extern/onewire_library/onewire_library.c.obj
+
+extern/onewire_library/onewire_library.i: extern/onewire_library/onewire_library.c.i
+.PHONY : extern/onewire_library/onewire_library.i
+
+# target to preprocess a source file
+extern/onewire_library/onewire_library.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.i
+.PHONY : extern/onewire_library/onewire_library.c.i
+
+extern/onewire_library/onewire_library.s: extern/onewire_library/onewire_library.c.s
+.PHONY : extern/onewire_library/onewire_library.s
+
+# target to generate assembly for a file
+extern/onewire_library/onewire_library.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plc-cleaner.dir\build.make CMakeFiles/plc-cleaner.dir/extern/onewire_library/onewire_library.c.s
+.PHONY : extern/onewire_library/onewire_library.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -1935,6 +2140,7 @@ help:
 	@echo ... bs2_default_bin
 	@echo ... bs2_default_padded_checksummed_asm
 	@echo ... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+	@echo ... onewire_library_onewire_library_pio_h
 	@echo ... bs2_default
 	@echo ... plc-cleaner
 	@echo ... C_/VSARM/FreeRTOS-Kernel/croutine.obj
@@ -2052,6 +2258,9 @@ help:
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s
@@ -2061,10 +2270,16 @@ help:
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s
@@ -2152,6 +2367,21 @@ help:
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s
+	@echo ... extern/hx711-pico-c/src/common.obj
+	@echo ... extern/hx711-pico-c/src/common.i
+	@echo ... extern/hx711-pico-c/src/common.s
+	@echo ... extern/hx711-pico-c/src/hx711.obj
+	@echo ... extern/hx711-pico-c/src/hx711.i
+	@echo ... extern/hx711-pico-c/src/hx711.s
+	@echo ... extern/hx711-pico-c/src/hx711_multi.obj
+	@echo ... extern/hx711-pico-c/src/hx711_multi.i
+	@echo ... extern/hx711-pico-c/src/hx711_multi.s
+	@echo ... extern/hx711-pico-c/src/util.obj
+	@echo ... extern/hx711-pico-c/src/util.i
+	@echo ... extern/hx711-pico-c/src/util.s
+	@echo ... extern/onewire_library/onewire_library.obj
+	@echo ... extern/onewire_library/onewire_library.i
+	@echo ... extern/onewire_library/onewire_library.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
