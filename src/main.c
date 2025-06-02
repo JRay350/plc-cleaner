@@ -30,7 +30,7 @@
 #define ULTRASONIC_ECHO 1
 
 #define POWER_STATUS_INPUT 14
-#define CLEAN_TANK_INPUT 12
+#define CLEAN_TANK_INPUT 27
 #define ERROR_INPUT 10
 #define DIRTY_TANK_INPUT 13
 
@@ -56,7 +56,9 @@
 #define OFF 0
 
 int PROGRAM_STATE = OFF;
-int ERROR_FLAG = OFF;
+int DIRTY_TANK_ERROR = OFF;
+int CLEAN_TANK_ERROR = OFF;
+int PRESSURE_ERROR = OFF;
 int CLEANING_SETTING = 1; // Low = 1, Med = 2, High = 3
 
 void send_trigger_pulse() {
@@ -99,12 +101,9 @@ double get_distance_cm() {
 /* FreeRTOS Tasks*/
 void PowerTask(void* param) {
     while (1) {
-        if (gpio_get(POWER_STATUS_INPUT) == 1) {
+        if (gpio_get(POWER_STATUS_INPUT) == ON) {
             if (PROGRAM_STATE == ON) { // If power button is pressed when already on
-                vTaskSuspendAll();
-                gpio_put_masked(RELAY_MASK | LED_MASK, OFF);
                 PROGRAM_STATE = !PROGRAM_STATE;
-                xTaskResumeAll();
             } else { // If power button is pressed when off
                 PROGRAM_STATE = !PROGRAM_STATE;
             }
@@ -117,11 +116,16 @@ void PowerTask(void* param) {
 
 void DirtyTankTask(void* param) {
     while (1) {
+        if (get_distance_cm() >= 0 && get_distance_cm() < 8.09625) DIRTY_TANK_ERROR = ON;
+        else {
+            DIRTY_TANK_ERROR = OFF;
+        }
+
         if (PROGRAM_STATE == ON) {
-            int DIRTY_TANK_STATUS = OFF;
-            if (get_distance_cm() >= 0 && get_distance_cm() < 30) DIRTY_TANK_STATUS = ON;
-            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_STATUS);
+            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_ERROR);
             vTaskDelay(100 / portTICK_PERIOD_MS);
+        } else {
+
         }
     }
 }
@@ -129,11 +133,16 @@ void DirtyTankTask(void* param) {
 void CleanTankTask(void* param) {
     while (1) {
         if (gpio_get(CLEAN_TANK_INPUT) == ON) {
-            absolute_time_t begin = get_absolute_time();
-            gpio_put(CLEAN_TANK_LED, ON);
-            absolute_time_t end = get_absolute_time();
-            int64_t duration_us = absolute_time_diff_us(begin, end);
-            ////printf("Response Time: %lld us\n", duration_us);
+            CLEAN_TANK_ERROR = ON;
+            printf("ON");
+        }
+        else {
+            CLEAN_TANK_ERROR = OFF;
+        }
+
+        if (PROGRAM_STATE == ON) {
+            gpio_put(CLEAN_TANK_LED, CLEAN_TANK_ERROR);
+        } else {
             gpio_put(CLEAN_TANK_LED, OFF);
         }
         vTaskDelay(10);
@@ -149,12 +158,12 @@ void CleanTankTask(void* param) {
 
 void ErrorTask(void* param) {
     while (1) {
-        if (gpio_get(ERROR_INPUT) == ON) {
-            absolute_time_t begin = get_absolute_time();
+        if (DIRTY_TANK_ERROR || CLEAN_TANK_ERROR || PRESSURE_ERROR) {
+            printf("Erroring! Program turning off");
+            PROGRAM_STATE = OFF;
             gpio_put(ERROR_LED, ON);
-            absolute_time_t end = get_absolute_time();
-            int64_t duration_us = absolute_time_diff_us(begin, end);
-            ////printf("Response Time: %lld us\n", duration_us);
+        } else {
+            PROGRAM_STATE = ON;
             gpio_put(ERROR_LED, OFF);
         }
         vTaskDelay(5);
@@ -176,6 +185,7 @@ void CleaningSettingTask(void* param) {
 void CleaningSettingLED(void* param) {
     while (1) {
         if (PROGRAM_STATE == ON) {
+            // blink depending more rapidly at higher cleaning settings
             gpio_put(CLEANING_SETTING_LED, ON);
             vTaskDelay(1000 / CLEANING_SETTING / portTICK_PERIOD_MS);
             gpio_put(CLEANING_SETTING_LED, OFF);
@@ -218,7 +228,7 @@ void PressureTask(void* param) {
             // Start measurement
             uint8_t cmd[] = {0xAA, 0x00, 0x00}; // based on protocol from datasheet
             if (i2c_write_blocking(i2c0, 0x18, cmd, 3, false) != 3) {
-                //printf("Failed to send measurement command\n");
+                printf("Failed to send measurement command\n");
                 vTaskDelay(500 / portTICK_PERIOD_MS);
                 continue;
             }
@@ -229,7 +239,7 @@ void PressureTask(void* param) {
             while (status & 0x20) {
                 i2c_read_blocking(i2c0, 0x18, &status, 1, false);
                 if (absolute_time_diff_us(start, get_absolute_time()) > 20000) {
-                    //printf("Sensor timeout\n");
+                    printf("Sensor timeout\n");
                     status = 0;  // break out
                     break;
                 }
@@ -238,14 +248,14 @@ void PressureTask(void* param) {
             // Read 4 bytes (status + 3 data bytes)
             uint8_t buffer[4];
             if (i2c_read_blocking(i2c0, 0x18, buffer, 4, false) != 4) {
-                //printf("Failed to read pressure data\n");
+                printf("Failed to read pressure data\n");
                 vTaskDelay(500 / portTICK_PERIOD_MS);
                 continue;
             }
 
             // Check error bits
             if (buffer[0] & 0x04 || buffer[0] & 0x01) {
-                //printf("Sensor error: status = 0x%02X\n", buffer[0]);
+                printf("Sensor error: status = 0x%02X\n", buffer[0]);
                 vTaskDelay(500 / portTICK_PERIOD_MS);
                 continue;
             }
@@ -259,10 +269,12 @@ void PressureTask(void* param) {
 
             if (psi > 18) {
                 gpio_put(ERROR_LED, ON);
-                //printf("Pressure: %.2f hPa (%.2f PSI), which exceeds the limit of 18 PSI\n", hpa, psi);
+                printf("Pressure: %.2f hPa (%.2f PSI), which exceeds the limit of 18 PSI\n", hpa, psi);
+                PRESSURE_ERROR = ON;
+                gpio_put(ERROR_LED, ON);
                 vTaskSuspendAll();
             } else {
-                //printf("Pressure: %.2f hPa (%.2f PSI)\n", hpa, psi);
+                printf("Pressure: %.2f hPa (%.2f PSI)\n", hpa, psi);
             }
         }
         vTaskDelay(500 / portTICK_PERIOD_MS);
@@ -370,7 +382,7 @@ int main() {
         "Manage program state",
         1024,
         NULL,
-        4,
+        5,
         &powTask);
 
     status = xTaskCreate(
@@ -378,7 +390,7 @@ int main() {
         "Manage dirty tank sensor and indicator",
         1024,
         NULL,
-        3,
+        5,
         &dTankTask        
     );
 
@@ -387,18 +399,18 @@ int main() {
         "Manage clean tank sensor and indicator",
         1024,
         NULL,
-        1,
+        5,
         &cTankTask        
     );
 
-    status = xTaskCreate(
+    /*status = xTaskCreate(
         ErrorTask,
         "Manage erroring",
         1024,
         NULL,
-        3,
+        4,
         &errTask        
-    );
+    );*/
 
     status = xTaskCreate(
         CleaningSettingTask,
@@ -414,7 +426,7 @@ int main() {
         "Manage LED for cleaning setting",
         1024,
         NULL,
-        1,
+        2,
         &cleanSettingLEDTask
     );
 
@@ -423,7 +435,7 @@ int main() {
         "Manage the cleaning operation",
         1024,
         NULL,
-        4,
+        5,
         &cleanTask
     );
 
@@ -432,7 +444,7 @@ int main() {
         "Manage pressure sensor",
         1024,
         NULL,
-        3,
+        4,
         &pressureTask
     );
 
