@@ -49,7 +49,7 @@
 
 #define BIT(n) (1u<<(n))
 #define LED_MASK (BIT(POWER_STATUS_LED) | BIT(CLEAN_TANK_LED) | BIT(DIRTY_TANK_LED) | BIT(ERROR_LED) | BIT(CLEANING_SETTING_LED)) 
-#define INPUT_MASK (BIT(POWER_STATUS_INPUT) | BIT(CLEAN_TANK_INPUT) | BIT(ERROR_INPUT) | BIT(DIRTY_TANK_INPUT))
+#define INPUT_MASK (BIT(POWER_STATUS_INPUT) | BIT(CLEAN_TANK_INPUT) | BIT(ERROR_INPUT) | BIT(DIRTY_TANK_INPUT) | BIT(CLEANING_SETTING_INPUT))
 #define RELAY_MASK (BIT(RELAY_1_INPUT) | BIT(RELAY_2_INPUT) | BIT(RELAY_3_INPUT) | BIT(RELAY_4_INPUT))
 
 #define ON 1
@@ -61,14 +61,23 @@ int CLEAN_TANK_ERROR = OFF;
 int PRESSURE_ERROR = OFF;
 int CLEANING_SETTING = 1; // Low = 1, Med = 2, High = 3
 
-void send_trigger_pulse() {
+TaskHandle_t powTask = NULL;
+TaskHandle_t dTankTask = NULL;
+TaskHandle_t cTankTask = NULL;
+TaskHandle_t errTask = NULL;
+TaskHandle_t settingTask = NULL;
+TaskHandle_t cleanSettingLEDTask = NULL;
+TaskHandle_t cleanTask = NULL;
+TaskHandle_t pressureTask = NULL;
+
+void SendTriggerPulse() {
     gpio_put(ULTRASONIC_TRIG, ON);
     vTaskDelay(60 / portTICK_PERIOD_MS);
     gpio_put(ULTRASONIC_TRIG, OFF);
 }
 
-double get_distance_cm() {
-    send_trigger_pulse();
+double GetDistance() {
+    SendTriggerPulse();
 
     absolute_time_t timeout = make_timeout_time_ms(200);
 
@@ -104,6 +113,7 @@ void PowerTask(void* param) {
         if (gpio_get(POWER_STATUS_INPUT) == ON) {
             if (PROGRAM_STATE == ON) { // If power button is pressed when already on
                 PROGRAM_STATE = !PROGRAM_STATE;
+                gpio_put_masked(LED_MASK, OFF);
             } else { // If power button is pressed when off
                 PROGRAM_STATE = !PROGRAM_STATE;
             }
@@ -116,17 +126,12 @@ void PowerTask(void* param) {
 
 void DirtyTankTask(void* param) {
     while (1) {
-        if (get_distance_cm() >= 0 && get_distance_cm() < 8.09625) DIRTY_TANK_ERROR = ON;
+        if (GetDistance() >= 0 && GetDistance() < 8.09625) DIRTY_TANK_ERROR = ON;
         else {
             DIRTY_TANK_ERROR = OFF;
         }
-
-        if (PROGRAM_STATE == ON) {
-            gpio_put(DIRTY_TANK_LED, DIRTY_TANK_ERROR);
-            vTaskDelay(100 / portTICK_PERIOD_MS);
-        } else {
-
-        }
+        gpio_put(DIRTY_TANK_LED, DIRTY_TANK_ERROR);
+        vTaskDelay(100 / portTICK_PERIOD_MS);
     }
 }
 
@@ -134,39 +139,51 @@ void CleanTankTask(void* param) {
     while (1) {
         if (gpio_get(CLEAN_TANK_INPUT) == ON) {
             CLEAN_TANK_ERROR = ON;
-            printf("ON");
         }
         else {
             CLEAN_TANK_ERROR = OFF;
         }
 
-        if (PROGRAM_STATE == ON) {
-            gpio_put(CLEAN_TANK_LED, CLEAN_TANK_ERROR);
-        } else {
-            gpio_put(CLEAN_TANK_LED, OFF);
-        }
+        gpio_put(CLEAN_TANK_LED, CLEAN_TANK_ERROR);
         vTaskDelay(10);
     }
 }
 
-        /*int ERROR_STATUS = gpio_get(ERROR_INPUT);
-        gpio_put(ERROR_LED, gpio_get(ERROR_INPUT));
-        if (ERROR_STATUS == ON) {
-            ERROR_FLAG = ON;
-        }*/
-
 
 void ErrorTask(void* param) {
+    static int isHalted = 0;
+    static int causedByError = 0;
     while (1) {
-        if (DIRTY_TANK_ERROR || CLEAN_TANK_ERROR || PRESSURE_ERROR) {
-            printf("Erroring! Program turning off");
+        int isError = DIRTY_TANK_ERROR || CLEAN_TANK_ERROR || PRESSURE_ERROR;
+        gpio_put(ERROR_LED, isError);
+
+        if (isError && !isHalted && PROGRAM_STATE == ON) {
+            printf("Error, halting operation...\n");
+            isHalted = ON;
             PROGRAM_STATE = OFF;
+            causedByError = 1;
+
             gpio_put(ERROR_LED, ON);
-        } else {
-            PROGRAM_STATE = ON;
-            gpio_put(ERROR_LED, OFF);
+
+            vTaskSuspend(settingTask);
+            vTaskSuspend(cleanSettingLEDTask);
+            gpio_put(CLEANING_SETTING_LED, OFF);
+            vTaskSuspend(cleanTask);
         }
-        vTaskDelay(5);
+
+        if (!isError && isHalted) {
+            printf("Errors Cleared...\n");
+            isHalted = OFF;
+            PROGRAM_STATE = ON;
+            gpio_put(POWER_STATUS_LED, ON);
+
+            gpio_put(ERROR_LED, OFF);
+
+            vTaskResume(settingTask);
+            vTaskResume(cleanSettingLEDTask);
+            vTaskResume(cleanTask);
+        }
+        vTaskDelay(50);
     }
 }
 
@@ -191,14 +208,14 @@ void CleaningSettingLED(void* param) {
             gpio_put(CLEANING_SETTING_LED, OFF);
             vTaskDelay(1000 / CLEANING_SETTING / portTICK_PERIOD_MS);
         }
-        vTaskDelay(5);
+        vTaskDelay(20);
     }
 }
 
 void CleanTask(void* param) {
     while (1) {
         if (PROGRAM_STATE == ON && gpio_get(START_INPUT) == 1) {
-            //////printf("Starting cleaning...\n");
+            printf("Starting cleaning...\n");
 
             gpio_put(RELAY_1_INPUT, ON);
             vTaskDelay(5000 * CLEANING_SETTING); // 5 seconds * either 1, 2, or 3 depending on LOW, MED, HIGH
@@ -218,7 +235,7 @@ void CleanTask(void* param) {
 
             //////printf("Done cleaning!\n");
         }
-        vTaskDelay(10); 
+        vTaskDelay(20); 
     }
 }
 
@@ -271,69 +288,9 @@ void PressureTask(void* param) {
                 gpio_put(ERROR_LED, ON);
                 printf("Pressure: %.2f hPa (%.2f PSI), which exceeds the limit of 18 PSI\n", hpa, psi);
                 PRESSURE_ERROR = ON;
-                gpio_put(ERROR_LED, ON);
-                vTaskSuspendAll();
             } else {
                 printf("Pressure: %.2f hPa (%.2f PSI)\n", hpa, psi);
-            }
-        }
-        vTaskDelay(500 / portTICK_PERIOD_MS);
-    }
-}
-
-void TemperatureTask(void* param) {
-    PIO pio = pio0;
-    OW ow;
-    uint offset;
-    while (1) {
-        if (PROGRAM_STATE == ON) {
-            if (pio_can_add_program (pio, &onewire_program)) {
-                offset = pio_add_program (pio, &onewire_program);
-        
-                // claim a state machine and initialise a driver instance
-                if (ow_init (&ow, pio, offset, TEMP_DATA)) {
-        
-                    // find and display 64-bit device addresses
-                    int maxdevs = 10;
-                    uint64_t romcode[maxdevs];
-                    int num_devs = ow_romsearch (&ow, romcode, maxdevs, OW_SEARCH_ROM);
-        
-                    printf("Found %d devices\n", num_devs);      
-                    for (int i = 0; i < num_devs; i += 1) {
-                        printf("\t%d: 0x%llx\n", i, romcode[i]);
-                    }
-                    putchar ('\n');
-        
-                    while (num_devs > 0) {
-                        // start temperature conversion in parallel on all devices
-                        // (see ds18b20 datasheet)
-                        ow_reset (&ow);
-                        ow_send (&ow, OW_SKIP_ROM);
-                        ow_send (&ow, DS18B20_CONVERT_T);
-        
-                        // wait for the conversions to finish
-                        while (ow_read(&ow) == 0);
-        
-                        // read the result from each device
-                        for (int i = 0; i < num_devs; i += 1) {
-                            ow_reset (&ow);
-                            ow_send (&ow, OW_MATCH_ROM);
-                            for (int b = 0; b < 64; b += 8) {
-                                ow_send (&ow, romcode[i] >> b);
-                            }
-                            ow_send (&ow, DS18B20_READ_SCRATCHPAD);
-                            int16_t temp = 0;
-                            temp = ow_read (&ow) | (ow_read (&ow) << 8);
-                            printf ("Temperature: %f degrees Celsius", i, temp / 16.0);
-                        }
-                        putchar ('\n');
-                    }
-                    
-                } else {
-                    puts ("could not initialise the driver");
-                }
-            } else {
-                puts ("could not add the program");
+                PRESSURE_ERROR = OFF;
             }
         }
         vTaskDelay(500 / portTICK_PERIOD_MS);
@@ -365,18 +322,6 @@ int main() {
     gpio_pull_up(PRESSURE_SDA);
     gpio_pull_up(PRESSURE_SCL);
 
-    
-
-    TaskHandle_t powTask = NULL;
-    TaskHandle_t dTankTask = NULL;
-    TaskHandle_t cTankTask = NULL;
-    TaskHandle_t errTask = NULL;
-    TaskHandle_t settingTask = NULL;
-    TaskHandle_t cleanSettingLEDTask = NULL;
-    TaskHandle_t cleanTask = NULL;
-    TaskHandle_t pressureTask = NULL;
-    TaskHandle_t tempTask = NULL;
-
     uint32_t status = xTaskCreate(
         PowerTask,
         "Manage program state",
@@ -390,7 +335,7 @@ int main() {
         "Manage dirty tank sensor and indicator",
         1024,
         NULL,
-        5,
+        4,
         &dTankTask        
     );
 
@@ -399,25 +344,25 @@ int main() {
         "Manage clean tank sensor and indicator",
         1024,
         NULL,
-        5,
+        4,
         &cTankTask        
     );
 
-    /*status = xTaskCreate(
+    status = xTaskCreate(
         ErrorTask,
         "Manage erroring",
         1024,
         NULL,
         4,
         &errTask        
-    );*/
+    );
 
     status = xTaskCreate(
         CleaningSettingTask,
         "Manage user input for cleaning setting",
         1024,
         NULL,
-        2,
+        3,
         &settingTask
     );
 
@@ -447,15 +392,6 @@ int main() {
         4,
         &pressureTask
     );
-
-    /*status = xTaskCreate(
-        TemperatureTask,
-        "Manage temperature sensor",
-        1024,
-        NULL,
-        4,
-        &tempTask
-    );*/
 
     vTaskStartScheduler();
 
